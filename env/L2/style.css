@@ -1,0 +1,27 @@
+* {
+    font-family: monospace;
+}
+
+body {
+    font-size: 18px;
+}
+
+p {
+    color: purple;
+}
+
+.color-violet {
+    color: violet;
+}
+
+#second {
+    color: blue;
+}
+
+p span {
+    background-color: goldenrod;
+}
+
+h2, h3 {
+    color: red;
+}

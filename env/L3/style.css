@@ -1,0 +1,16 @@
+body {
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.5;
+    background: papayawhip;
+    color: blue;
+}
+
+element {
+    color: blue;
+    color: #00f;
+    color: #0000ff;
+    color: rgb(0, 0, 255);
+    color: rgba(0, 0, 255, 1);
+    color: hsl(240, 100%, 50%);
+}
