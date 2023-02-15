@@ -144,3 +144,34 @@ The second explanation is, ```00F``` which is originally stands for ```0000FF```
 We already mention the first 4 declaration. Now, the RGBA is similar to RGB however A is stands for Alpha channel which is using for transparency. Instead of 0 - 255, it's used between 0 to 1. 1 For fully shown and 0 is completely disappear.<br>
 Lastly, HSL is used. However, I don't know how it's used. I, probably, not going to use it. But feel free to do your research. Also, there is hsla same deal with hls but transparency.
 
+> Chapter 4: Units & Sizes
+
+There are way more units for sizing than what we need. The units will be shown whichs most used in daily basis according to instructor in the link. So, I am going to stick with that. At the end, we want to focus on whats mostly popular in daily uses.
+
+The sizes is given in the mozillas official [link](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units#numbers_lengths_and_percentages). _As far as he says, the one absolute size that front-end uses is pixels._ Default page font-size for paragraph is 16px, aka. 16 pixels.
+
+width parameter is gots it's scaling from parent tag if the percentage is used. For example, Let's say body is parent tag and h2 is child tag. With that matter, if you construct like
+
+```css
+body {
+    width: 50%;
+}
+
+h2 {
+    width: 50%;
+}
+```
+
+The ```h2.width = .5 * body.width```. Which is ultimately, makes h2 size __0.25%__. That's what we call relative-length unit. The reverse is absolute-length unit. You can also check those from mozillas-link.
+
+| shortcut | description/stands for
+|--- |---
+| rem | Root Element
+| px | Pixel/s
+| em | Element (looks for parent, not root.), not recommended to use that often.
+| ch | Character, before we wrap the line, we put that amount of character. Like so
+| vw | view width
+
+The __vw__ does not recommended to use since, it doesn't count the scroll-bar at left (if any), but % counts for that. Which makes the pages look better.
+
+> Box Model
