@@ -175,3 +175,26 @@ The ```h2.width = .5 * body.width```. Which is ultimately, makes h2 size __0.25%
 The __vw__ does not recommended to use since, it doesn't count the scroll-bar at left (if any), but % counts for that. Which makes the pages look better.
 
 > Box Model
+
+>> Quick Note: <br>
+Turning box into an circle. You could use element property called border-radius. If you add half of the height, it will turn your box into cicrle. If you use less, it will turn elipse shape. If you use more, seems like nothing happens.
+
+To have more control and understand over the CSS on your project. You should know and get familiar with the Dev Tools of Browsers. __CTRL + ALT + I__ should open your dev tools in chrome. If that doesn't worked. Right click the browser content, and select the option called __inspect__. Either of that should work. When you access the pages, there are multiple layer/section that help you to understand what is going on with your css & html. What we are going to focus, ~~initally~~, is computed section.
+
+![Picture](/Pics/3.PNG)
+
+When you access to that section, we will see 4 layer of our design. We can select/manipulate/see the layer of element in here. From outside to inside:
+
+1. Margin: Shown with dark brown~ish color: This is the space between our model and the next coming model.
+1. Border: Shown with light brown/orange~ish color. That's show the border-lines of our element.
+1.  Padding: Shown with Light green color. This is space between your border lines and content. If you have border tag used with dash or solid let say, this is the space will appear between your content and your border.
+1. Content: Shown in blue. This is the property section that captures the style in your content.
+
+__box-sizing__
+|type|how it's works
+|---|---
+|content-box| This is make the width of content. That's might be faulty, since the padding, border, and margin is not included. So, it may hard to control over it.
+|border-box| This is make the width or border. Apart from margin, all the total box size width set for border. Including, padding and content. It may much useful in some cases.
+
+> Typography
+
