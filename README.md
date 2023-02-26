@@ -174,7 +174,7 @@ The ```h2.width = .5 * body.width```. Which is ultimately, makes h2 size __0.25%
 
 The __vw__ does not recommended to use since, it doesn't count the scroll-bar at left (if any), but % counts for that. Which makes the pages look better.
 
-> Box Model
+> Chapter 5: Box Model
 
 >> Quick Note: <br>
 Turning box into an circle. You could use element property called border-radius. If you add half of the height, it will turn your box into cicrle. If you use less, it will turn elipse shape. If you use more, seems like nothing happens.
@@ -196,5 +196,25 @@ __box-sizing__
 |content-box| This is make the width of content. That's might be faulty, since the padding, border, and margin is not included. So, it may hard to control over it.
 |border-box| This is make the width or border. Apart from margin, all the total box size width set for border. Including, padding and content. It may much useful in some cases.
 
-> Typography
+> Chapter 6: Typography
 
+>> Typography is the way that text is arranged and represented.
+
+As far as I understood, this is the topic that shape the appearance of texts. For checking and learning more about it, style.css folder contains some examples. Also, uploading non-default font family is a well-known thing. Peope usually use [google fonts](https://fonts.google.com/) for it.
+
+> Chapter 7: Styling Links
+
+The link properties almost same with text properties. But they are classified in different tag, aka. __\<a>__ tag. These links, have different properties what people call, psuedo classes. For example, if the link clicked before, aka. __visited__.
+
+I found the [mozilla](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes)'s link is useful once again! 
+
+The order of pseudo-classes should be like in this order.
+
+1. element (alone)
+1. visited
+1. hover
+1. active
+
+The order doesn't that much matter. However, some of the properties might overwrite the others. Logical order should be used.
+
+> Chapter 8: List Styles
