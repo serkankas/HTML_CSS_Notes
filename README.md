@@ -218,3 +218,7 @@ The order of pseudo-classes should be like in this order.
 The order doesn't that much matter. However, some of the properties might overwrite the others. Logical order should be used.
 
 > Chapter 8: List Styles
+
+The notes are provided in CSS and HTML. So you should check those, there is not much to tell about. Only thing that might be interesting is, [pseudo-elements](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements) next to [pseudo-class](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements). Also another interesting thing is, marker element. The [example](https://developer.mozilla.org/en-US/docs/Web/CSS/::marker) is shows the usage. but interesting thing is, even if you declare your list-style none, the content will appear 
+
+> Chapter 9: Mini Project
