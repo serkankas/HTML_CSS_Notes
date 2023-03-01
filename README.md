@@ -222,3 +222,7 @@ The order doesn't that much matter. However, some of the properties might overwr
 The notes are provided in CSS and HTML. So you should check those, there is not much to tell about. Only thing that might be interesting is, [pseudo-elements](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements) next to [pseudo-class](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements). Also another interesting thing is, marker element. The [example](https://developer.mozilla.org/en-US/docs/Web/CSS/::marker) is shows the usage. but interesting thing is, even if you declare your list-style none, the content will appear 
 
 > Chapter 9: Mini Project
+
+There is a small project that he made. I made a little different project. Instead of just making navbar, ~~which by the way was cool~~, I made a To Do kinda webpage. Feel free to check!
+
+> Chapter 10: Display

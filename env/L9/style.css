@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Mynerve&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color-prime: #4E6E81;
+    --color-second: #F9DBBB;
+    --color-third: #FF0303;
+    --color-fourth: #2E3840;
+}
+
+body {
+    padding: 25px;
+    font-family: 'Mynerve', cursive;
+    width: 100vw;
+    font-size: 2em;
+    background-color: var(--color-prime);
+    color: var(--color-second);
+}
+
+body h2 {
+    text-align: center;
+}
+
+body nav {
+    vertical-align: middle;
+    width: 650px;
+    border-radius: 1.5rem;
+    border: 3px dashed var(--color-second);
+    text-align: center;
+    margin-left: calc(50vw - 350px);
+}
+
+body nav a, body nav a:visited {
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: var(--color-third);
+
+}
+
+body nav a:hover, body nav a:focus{
+    color: var(--color-fourth);
+}
+
+body main ul {
+    list-style-position: inside;
+    list-style-type: none;
+}
+
+body main h4 {
+    text-decoration: underline;
+    font-size: 1.2em;
+}
+
