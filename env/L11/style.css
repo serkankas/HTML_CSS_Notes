@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
+body {
+    font-size: 2rem;
+    font-family: 'Source Code Pro', monospace;
+}
+
+div.block {
+    width: 25vw;
+    height: 25vw;
+    background-color: black;
+    color: aliceblue;
+    padding: 1rem;
+}
+
+div.left {
+    float: left;
+    margin-right: 5px;
+}
+
+div.right {
+    float: right;
+    margin-left: 5px;
+}
+
+div.clear {
+    clear: both;
+}

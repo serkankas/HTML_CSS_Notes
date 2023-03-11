@@ -262,3 +262,9 @@ Well that's not what we exactly wants sice, the paragraph itself broken into pie
 More information can be found in official [mozilla's link](https://developer.mozilla.org/en-US/docs/Web/CSS/display), feel free to check and learn more!
 
 > Chapter 11: Floats
+
+Float properties, makes the element put in html meanwhile the structure doesn't interrupt that much. It hard to explain, but it's easy when you see visually. Feel free to check [example](/env/L11/index.html). We add clear class to a div, to clear that float property. ~~You could see how the last line seperated from others.~~
+
+There is a section where we should take attention in [video](https://www.youtube.com/watch?v=OXGznpKZ_sA&t=11321s). That's a think I can't explain verbally. Watch ___until end___ of that section!
+
+> Chapter 12: Columns
