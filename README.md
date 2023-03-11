@@ -226,3 +226,39 @@ The notes are provided in CSS and HTML. So you should check those, there is not 
 There is a small project that he made. I made a little different project. Instead of just making navbar, ~~which by the way was cool~~, I made a To Do kinda webpage. Feel free to check!
 
 > Chapter 10: Display
+
+So, display is a property will show what kind of behaviour that html element will take. For example, \<p> tag is block type display element meanwhile, \<span> tag is inline type display element. Well, consider their boundries, we gave small CSS like this.
+
+```css
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
+body {
+    font-size: 2rem;
+    font-family: 'Source Code Pro', monospace;
+}
+
+p {
+    background-color: lightgray;
+}
+
+span.opposite {
+    background-color: blueviolet;
+    padding: 3rem;
+}
+```
+
+So with that being applied, the default image will look like this.
+
+![Picture](/Pics/4.png)
+
+As you see, __inline__ structure crushes the other line corresponds. When we gave property of __display: block;__ inside the span element it will look like this.
+
+![Picture](/Pics/6.png)
+
+Well that's not what we exactly wants sice, the paragraph itself broken into pieces. So there are more display types then what we learned so far. The one we looking for for that specific matter is __inline-block__. Which is combination of inline and block. That type actually saves your boundary, while it does not broke the whole block.
+
+![Picture](/Pics/5.png)
+
+More information can be found in official [mozilla's link](https://developer.mozilla.org/en-US/docs/Web/CSS/display), feel free to check and learn more!
+
+> Chapter 11: Floats
