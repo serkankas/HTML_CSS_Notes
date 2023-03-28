@@ -268,3 +268,63 @@ Float properties, makes the element put in html meanwhile the structure doesn't 
 There is a section where we should take attention in [video](https://www.youtube.com/watch?v=OXGznpKZ_sA&t=11321s). That's a think I can't explain verbally. Watch ___until end___ of that section!
 
 > Chapter 12: Columns
+
+Column is basically another property that will divide you width into specific number that you wish.
+
+<br>
+<style>
+    .columns {
+        columns: 3;
+        column-rule: 3px solid #333
+    }
+
+    .columns p {
+        margin-top: 0;
+    }
+</style>
+<hr>
+<section class="columns">
+    <p>
+    Test Line that inside the columns. Some Random letters that fills some space with it. Please note how the text are seperated inside the columns
+    </p>
+    <p>
+    Test Line that inside the columns. Some Random letters that fills some space with it. Please note how the text are seperated inside the columns
+    </p>
+    <p>
+    Test Line that inside the columns. Some Random letters that fills some space with it. Please note how the text are seperated inside the columns
+    </p>
+    <p>
+    Test Line that inside the columns. Some Random letters that fills some space with it. Please note how the text are seperated inside the columns
+    </p>
+</section>
+<hr>
+<p>
+Test Line that outside of the columns. Some Random letters that fills some space with it. Please note how the text are seperated outside of the columns
+</p>
+<p>
+Test Line that outside of the columns. Some Random letters that fills some space with it. Please note how the text are seperated outside of the columns
+</p>
+<p>
+Test Line that outside of the columns. Some Random letters that fills some space with it. Please note how the text are seperated outside of the columns
+</p>
+<p>
+Test Line that outside of the columns. Some Random letters that fills some space with it. Please note how the text are seperated outside of the columns
+</p>
+<hr>
+<br>
+
+There is also another point that mentioned inside this episode. Which is, margin collapce. Now let's assume that there are two different element stand on top of each other. Margin bottom of top element will be collapse with margin top of bottom element. That's what they called, margin collapsing. That's not a bad thing totally. You could use carefully and apply according to your needs.
+
+There are some prevention that can be taken before the column rules apply. Let's assume that you put one header in middle of the text inside the columns section. You want that header to stay at top. Sometimes weird issues can be seen like mention in video. In order to prevent that, we could add two different parameter.
+
+1. break-inside: avoid;<br>
+What this does is, it'll prevent to break your header into multiple section. Which makes sense, since the header should be stayed at one piece.
+
+However, header also should be at top right? 
+
+2. break-before: column;<br>
+That's a prevention that set your haeder to the top. However downside of this usage is, you cannot go for one line with resizing window. When you go for that low, it'll shrink your text, etc. Since this line is force you to make some column break in anyway.
+
+___OQN___: You could find some useful symbol that could be usable inside html in the [link](https://old.unicode-table.com/en/).
+
+Another property that might be useful for this page setup is column-span property. That property gives you full break through column, and continue with column as well. You can see the example usage inside the page.
