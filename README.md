@@ -19,6 +19,21 @@ As I mention above, you could see that if we think human body as front-end appli
 
 Then, Let's dive into the course and the chapters.
 
+1. [Chapter 1: Start Here](#chapter1)
+1. [Chapter 2: CSS Selectors](#chapter2)
+1. [Chapter 3: Colors](#chapter3)
+1. [Chapter 4: Units & Sizes](#chapter4)
+1. [Chapter 5: Box Model](#chapter5)
+1. [Chapter 6: Typography](#chapter6)
+1. [Chapter 7: Stylink Links](#chapter7)
+1. [Chapter 8: List Styles](#chapter8)
+1. [Chapter 9: Mini Project](#chapter9)
+1. [Chapter 10: Display](#chapter10)
+1. [Chapter 11: Floats](#chapter11)
+1. [Chapter 12: Columns](#chapter12)
+1. [Chapter 13: Positions](#chapter13)
+
+<section id="chapter1"></section>
 > Chapter 1: Start Here
 
 There are 3 common way to apply your CSS to HTML.
@@ -64,6 +79,7 @@ Styling is happen in CASCADE. OR simple term, it'll overwrite until the last cod
 
 For further explanation for basic rules, you can follow the mozillas official [link](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics) here. Also in the course it mentions that, there is a [CSS Validation Service](https://jigsaw.w3.org/css-validator/). Feel free to check and use in your own purposes with your own responsibility.
 
+<section id="chapter2"></section>
 > Chapter 2: CSS Selectors
 
 For further of this course, I am going use dummy text generator what I call from this [link](https://www.blindtextgenerator.com/lorem-ipsum). Feel free to check and use.
@@ -124,6 +140,7 @@ There is another concept call CSS Reset / Universal Selector. However, it's not 
 
 Not recommended to use it but, there is ```!important``` keyword that you can put any properties end like ```color: gray!important;``` With that, all the rules will be regardless of any situation mentioned before.
 
+<section id="chapter3"></section>
 > Chapter 3: Colors
 
 There couple way to present color in CSS.
@@ -144,6 +161,7 @@ The second explanation is, ```00F``` which is originally stands for ```0000FF```
 We already mention the first 4 declaration. Now, the RGBA is similar to RGB however A is stands for Alpha channel which is using for transparency. Instead of 0 - 255, it's used between 0 to 1. 1 For fully shown and 0 is completely disappear.<br>
 Lastly, HSL is used. However, I don't know how it's used. I, probably, not going to use it. But feel free to do your research. Also, there is hsla same deal with hls but transparency.
 
+<section id="chapter4"></section>
 > Chapter 4: Units & Sizes
 
 There are way more units for sizing than what we need. The units will be shown whichs most used in daily basis according to instructor in the link. So, I am going to stick with that. At the end, we want to focus on whats mostly popular in daily uses.
@@ -174,6 +192,7 @@ The ```h2.width = .5 * body.width```. Which is ultimately, makes h2 size __0.25%
 
 The __vw__ does not recommended to use since, it doesn't count the scroll-bar at left (if any), but % counts for that. Which makes the pages look better.
 
+<section id="chapter5"></section>
 > Chapter 5: Box Model
 
 >> Quick Note: <br>
@@ -196,12 +215,14 @@ __box-sizing__
 |content-box| This is make the width of content. That's might be faulty, since the padding, border, and margin is not included. So, it may hard to control over it.
 |border-box| This is make the width or border. Apart from margin, all the total box size width set for border. Including, padding and content. It may much useful in some cases.
 
+<section id="chapter6"></section>
 > Chapter 6: Typography
 
 >> Typography is the way that text is arranged and represented.
 
 As far as I understood, this is the topic that shape the appearance of texts. For checking and learning more about it, style.css folder contains some examples. Also, uploading non-default font family is a well-known thing. Peope usually use [google fonts](https://fonts.google.com/) for it.
 
+<section id="chapter7"></section>
 > Chapter 7: Styling Links
 
 The link properties almost same with text properties. But they are classified in different tag, aka. __\<a>__ tag. These links, have different properties what people call, psuedo classes. For example, if the link clicked before, aka. __visited__.
@@ -217,14 +238,17 @@ The order of pseudo-classes should be like in this order.
 
 The order doesn't that much matter. However, some of the properties might overwrite the others. Logical order should be used.
 
+<section id="chapter8"></section>
 > Chapter 8: List Styles
 
 The notes are provided in CSS and HTML. So you should check those, there is not much to tell about. Only thing that might be interesting is, [pseudo-elements](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements) next to [pseudo-class](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements). Also another interesting thing is, marker element. The [example](https://developer.mozilla.org/en-US/docs/Web/CSS/::marker) is shows the usage. but interesting thing is, even if you declare your list-style none, the content will appear 
 
+<section id="chapter9"></section>
 > Chapter 9: Mini Project
 
 There is a small project that he made. I made a little different project. Instead of just making navbar, ~~which by the way was cool~~, I made a To Do kinda webpage. Feel free to check!
 
+<section id="chapter10"></section>
 > Chapter 10: Display
 
 So, display is a property will show what kind of behaviour that html element will take. For example, \<p> tag is block type display element meanwhile, \<span> tag is inline type display element. Well, consider their boundries, we gave small CSS like this.
@@ -261,12 +285,14 @@ Well that's not what we exactly wants sice, the paragraph itself broken into pie
 
 More information can be found in official [mozilla's link](https://developer.mozilla.org/en-US/docs/Web/CSS/display), feel free to check and learn more!
 
+<section id="chapter11"></section>
 > Chapter 11: Floats
 
 Float properties, makes the element put in html meanwhile the structure doesn't interrupt that much. It hard to explain, but it's easy when you see visually. Feel free to check [example](/env/L11/index.html). We add clear class to a div, to clear that float property. ~~You could see how the last line seperated from others.~~
 
 There is a section where we should take attention in [video](https://www.youtube.com/watch?v=OXGznpKZ_sA&t=11321s). That's a think I can't explain verbally. Watch ___until end___ of that section!
 
+<section id="chapter12"></section>
 > Chapter 12: Columns
 
 Column is basically another property that will divide you width into specific number that you wish.
@@ -329,6 +355,7 @@ ___OQN___: You could find some useful symbol that could be usable inside html in
 
 Another property that might be useful for this page setup is column-span property. That property gives you full break through column, and continue with column as well. You can see the example usage inside the page.
 
+<section id="chapter13"></section>
 > Chapter 13: Positions
 
 Positions of elements, this example will use some boxes to show what is exactly going on with it.
