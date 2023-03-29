@@ -328,3 +328,17 @@ That's a prevention that set your haeder to the top. However downside of this us
 ___OQN___: You could find some useful symbol that could be usable inside html in the [link](https://old.unicode-table.com/en/).
 
 Another property that might be useful for this page setup is column-span property. That property gives you full break through column, and continue with column as well. You can see the example usage inside the page.
+
+> Chapter 13: Positions
+
+Positions of elements, this example will use some boxes to show what is exactly going on with it.
+
+First thing that I realize in this lesson is, you can give multiple class to an element. Example usage would be like ```class="class-1 class-2 class-3"```. If you seperate them with space, it means it'll be different classes. That's a new information for my aspect.
+
+Now, position property has multiple options. You can find some visual presentation in official mozillas [link](https://developer.mozilla.org/en-US/docs/Web/CSS/position) 
+
+1. static: This one is default. Basicly put the position compared to its parent. I am not sure if it's much useful than that. It's put your object into static position where it doesn't change.
+1. absolute: This one is obviously absolute position. If you gave any sort of reference to it, it will shown in that place. The problem with it, I believe, If your page is changing, it may have couple issues. It's also bind it's absolute position to nearest relative position.
+1. relative: This one is relative to it's parrent classes. Doesn't matter if the parent container is relative or not like the siutation in absolute.
+1. fixed: This one is fixed position. Which means that if you even scroll down, the placed element stays there. Fixed element stays at top of the elements that has been written previously. If you wrote element that's been written after fixed, it will overlay the fixed element
+1. sticky: This one is similar to fixed one. But the boundary is binded to parent element instead of full page.
