@@ -32,6 +32,8 @@ Then, Let's dive into the course and the chapters.
 1. [Chapter 11: Floats](#chapter11)
 1. [Chapter 12: Columns](#chapter12)
 1. [Chapter 13: Positions](#chapter13)
+1. [Chapter 14: Flexbox](#chapter14)
+1. [Chapter 15: Grid Layout](#chapter15)
 
 <section id="chapter1"></section>
 
@@ -382,3 +384,35 @@ Now, position property has multiple options. You can find some visual presentati
 1. relative: This one is relative to it's parrent classes. Doesn't matter if the parent container is relative or not like the siutation in absolute.
 1. fixed: This one is fixed position. Which means that if you even scroll down, the placed element stays there. Fixed element stays at top of the elements that has been written previously. If you wrote element that's been written after fixed, it will overlay the fixed element
 1. sticky: This one is similar to fixed one. But the boundary is binded to parent element instead of full page.
+
+<section id="chapter14"></section>
+
+> Chapter 14: Flexbox
+
+Yet again one of the hard topic to explain. Displaying in Flexible property. What it does, ~~as far as I understand~~, lay the items the desired position. with different properties, you could start from right to left. You can place them centerwise, you could evenly distribute them. When I mean by laying, you could check from the mozillas official [link](https://developer.mozilla.org/en-US/docs/Web/CSS/display). example usage would be like this.
+
+```css
+.desired-class {
+    display: flex;
+    /* depends on your desired wishes, these properties might be usefull.
+    gap
+    flex-flow
+        flex-direction
+        flex-wrap
+    justify-content
+    align-content
+    align-items
+    flex
+        flex-grow
+        flex-shrink
+        flex-basis
+    order
+    */
+}
+```
+
+There's a small example that you could play. My suggestion is check the [game](https://flexboxfroggy.com/) with the help of [properties](https://developer.mozilla.org/en-US/docs/Web/CSS). The properties shown at Reference -> Properties.
+
+<section id="chapter14"></section>
+
+> Chapter 15: Grid Layout
