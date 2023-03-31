@@ -413,6 +413,12 @@ Yet again one of the hard topic to explain. Displaying in Flexible property. Wha
 
 There's a small example that you could play. My suggestion is check the [game](https://flexboxfroggy.com/) with the help of [properties](https://developer.mozilla.org/en-US/docs/Web/CSS). The properties shown at Reference -> Properties.
 
-<section id="chapter14"></section>
+<section id="chapter15"></section>
 
 > Chapter 15: Grid Layout
+
+This is a layout that we use for display options. That's basically divide your page into grid-like structure. Then, you can place your section as you wish. Here's the cool example from mozillas official [link](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout).
+
+You can check the grid column/row with the dev-tools. Open dev-tools, elements tab, layout section. In that particular section, you'll see ___grid overlays: main container___ ~~or other grid layers~~. When you enable it, you'll able to see the grids of the page.
+
+The ```grid-area``` properties is allows you to seperate as grid view as you wish. [Grid Layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout) and [Grid Areas](https://developer.mozilla.org/en-US/docs/Glossary/Grid_Areas) example are hopefully clear for the usage. Example usage should be check in L15 inside the env.
