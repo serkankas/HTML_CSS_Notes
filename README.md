@@ -34,6 +34,7 @@ Then, Let's dive into the course and the chapters.
 1. [Chapter 13: Positions](#chapter13)
 1. [Chapter 14: Flexbox](#chapter14)
 1. [Chapter 15: Grid Layout](#chapter15)
+1. [Chapter 16: Images](#chapter16)
 
 <section id="chapter1"></section>
 
