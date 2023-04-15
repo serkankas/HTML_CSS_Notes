@@ -422,3 +422,25 @@ This is a layout that we use for display options. That's basically divide your p
 You can check the grid column/row with the dev-tools. Open dev-tools, elements tab, layout section. In that particular section, you'll see ___grid overlays: main container___ ~~or other grid layers~~. When you enable it, you'll able to see the grids of the page.
 
 The ```grid-area``` properties is allows you to seperate as grid view as you wish. [Grid Layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout) and [Grid Areas](https://developer.mozilla.org/en-US/docs/Glossary/Grid_Areas) example are hopefully clear for the usage. Example usage should be check in L15 inside the env.
+
+<section id="chapter16"></section>
+
+> Chapter 16: Images
+
+Images can be classified as two different category.
+
+1. Background Image
+1. Foreground Image
+
+The image as concept is very straightforward. However, there might be much useful things to learn. 
+
+1. As a display element, it is not block element but it is inline element. Which means, it will not cover whole block in some cases.
+2. Background image is repeating since it tries to fill the whole background. Some useful properties related with background is given in the [link](https://developer.mozilla.org/en-US/docs/Web/CSS/background).
+
+One suggestion, if you want to fill your background image with complex images, you could use text-shadow. You can find example usage in the [link](https://developer.mozilla.org/en-US/docs/Web/CSS/text-shadow)
+
+Also I found a strange behaviour about images. Let say you set your image height and weight, expect to behave image based on that. However, that's not the case. If you plan to use your photo, cropped it first according to shape that you want.
+
+There is also one other cool think called linear-gradient for background-image property. Check the example shown in [here](https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/linear-gradient).
+
+The __background__ property, ~~that contains multiple properties~~, is shown the order @5:32:07 in course. Feel free to check that part. 
