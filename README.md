@@ -35,6 +35,7 @@ Then, Let's dive into the course and the chapters.
 1. [Chapter 14: Flexbox](#chapter14)
 1. [Chapter 15: Grid Layout](#chapter15)
 1. [Chapter 16: Images](#chapter16)
+1. [Chapter 17: Media Queries](#chapter17)
 
 <section id="chapter1"></section>
 
@@ -444,4 +445,25 @@ Also I found a strange behaviour about images. Let say you set your image height
 
 There is also one other cool think called linear-gradient for background-image property. Check the example shown in [here](https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/linear-gradient).
 
-The __background__ property, ~~that contains multiple properties~~, is shown the order @5:32:07 in course. Feel free to check that part. 
+The __background__ property, ~~that contains multiple properties~~, is shown the order @5:32:07 in course. Feel free to check that part.
+
+<section id="chapter17"></section>
+
+> Chapter 17: Media Queries
+
+There is specific writing rule of CSS for media queries. Here is an example usage of media query.
+
+```css
+@media media_type and (condition: breakpoint) {
+    // css Rule
+}
+```
+
+1. Start with __@media__ to tell CSS it's a media query.
+1. Then point it out what type media/s that we will affected by that query.
+1. In paranthesis, we gave condition and breakpoint.
+1. Inside the curly braces, we override CSS properties again.
+
+We can set condition based on min-width or max-width. They usually go for min-width based design since, they called the structure __Mobile_First__ kinda design.
+
+Here's the reference [link](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries) from mozilla's website. There some common breakpoint that has been published by author of this course. You can find the markdown from [link](https://github.com/gitdagray/css_course/blob/main/17_lesson_starter/notes.md).
