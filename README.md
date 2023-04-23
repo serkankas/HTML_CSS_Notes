@@ -37,6 +37,7 @@ Then, Let's dive into the course and the chapters.
 1. [Chapter 16: Images](#chapter16)
 1. [Chapter 17: Media Queries](#chapter17)
 1. [Chapter 18: Card Project](#chapter18)
+1. [Chapter 19: Pseudo Classes & Elements](#chapter19)
 
 <section id="chapter1"></section>
 
@@ -475,3 +476,15 @@ Here's the reference [link](https://developer.mozilla.org/en-US/docs/Web/CSS/Med
 
 In this project, we will create a template for people and their cards. You can check the project it self for coding. I am not going to explain in this section. Check the relative files.
 
+<section id="chapter19"></section>
+
+> Chapter 19: Pseudo Classes
+
+Difference between Pseudo Classes and Pseudo Elements
+
+| Classes|Elements
+|---|---
+| Classes access the object with in states. Like if selected or hover it etc.| It acts like adding new element in to HTML codes.
+| Uses one colon __:__ | Uses two colon __::__
+
+This part is relatively verbal one. So you can either watch or check the mozillas official [link](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Pseudo-classes_and_pseudo-elements).
