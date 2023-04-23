@@ -36,6 +36,7 @@ Then, Let's dive into the course and the chapters.
 1. [Chapter 15: Grid Layout](#chapter15)
 1. [Chapter 16: Images](#chapter16)
 1. [Chapter 17: Media Queries](#chapter17)
+1. [Chapter 18: Card Project](#chapter18)
 
 <section id="chapter1"></section>
 
@@ -467,3 +468,10 @@ There is specific writing rule of CSS for media queries. Here is an example usag
 We can set condition based on min-width or max-width. They usually go for min-width based design since, they called the structure __Mobile_First__ kinda design.
 
 Here's the reference [link](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries) from mozilla's website. There some common breakpoint that has been published by author of this course. You can find the markdown from [link](https://github.com/gitdagray/css_course/blob/main/17_lesson_starter/notes.md).
+
+<section id="chapter18"></section>
+
+> Chapter 18: Cards Project
+
+In this project, we will create a template for people and their cards. You can check the project it self for coding. I am not going to explain in this section. Check the relative files.
+
