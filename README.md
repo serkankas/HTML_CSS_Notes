@@ -38,6 +38,7 @@ Then, Let's dive into the course and the chapters.
 1. [Chapter 17: Media Queries](#chapter17)
 1. [Chapter 18: Card Project](#chapter18)
 1. [Chapter 19: Pseudo Classes & Elements](#chapter19)
+1. [Chapter 20: Variables](#chapter20)
 
 <section id="chapter1"></section>
 
@@ -488,3 +489,48 @@ Difference between Pseudo Classes and Pseudo Elements
 | Uses one colon __:__ | Uses two colon __::__
 
 This part is relatively verbal one. So you can either watch or check the mozillas official [link](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Pseudo-classes_and_pseudo-elements).
+
+<section id="#chapter20"></section>
+
+> Chapter 20: Variables
+
+This is one of the main and simple chapter in programming overall. We, usually, want to build our designs, doesn't matter backend, frontend or other type of programs, based on variables. Since the variable can be replacable once, but will impact as many times as you used it.<br>
+For example, let's say you use two different color for your front-end as main and secondary background color. You defined in your css once. Then, you can apply let say 50 different places. Whenever you want to change either or both color, you simple change the variable instead of changing all 50 places from beginning to end.<br>
+It is also provides you to DRY (__Dont Repeat Yourself__) your code.
+
+```css
+/* Variables */
+
+:root {
+    /* Colors */
+    --BGCOLOR: #475569;
+
+    /* Font Related */
+    --fontsize: 1.5rem;
+    --font-type: sans-serif;
+
+    /* General */
+    --GRADIENT: radial-gradient(#123, #555);
+    --BORDER-TYPE: border: 2px solid var(--BGCOLOR);
+}
+
+body {
+    background-color: var(--BGCOLOR);
+    background-image: var(--GRADIENT);
+    border: var(--BORDER-TYPE);
+    font: var(--fontsize) var(--font-type);
+}
+
+```
+
+As you can see in here, we use __root__ pseudo-classes to declare our variables. The main reason behind its, Every element in html and css (including html tag as well), reference this pseudo-classes. Which means everything you wrote inside of it, can be accessable by other places as well.<br>
+Accessing variable is also very easy. You can access with built-in css function called __var()__. This function look for parent classes or related classes that if this variable is defined in somewhere.
+
+Variables contains from very basic color code or text sizes to, complex css function if you wish.
+
+There are couple different naming for using variable. However, it's all preferences. I __HIGHLY__ suggest that you pick one styling, and stick with it. Since the consistency increase the code readability.
+
+There is over-writing variable for css. You can check in video __@07:16:30__. That's an useful feature that you can apply.
+
+Also, __@07:19:00__ it shows about dark mode application, etc. You can check that too if you wishes so.
+
