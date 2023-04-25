@@ -39,6 +39,7 @@ Then, Let's dive into the course and the chapters.
 1. [Chapter 18: Card Project](#chapter18)
 1. [Chapter 19: Pseudo Classes & Elements](#chapter19)
 1. [Chapter 20: Variables](#chapter20)
+1. [Chapter 21: Functions](#chapter21)
 
 <section id="chapter1"></section>
 
@@ -490,7 +491,7 @@ Difference between Pseudo Classes and Pseudo Elements
 
 This part is relatively verbal one. So you can either watch or check the mozillas official [link](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Pseudo-classes_and_pseudo-elements).
 
-<section id="#chapter20"></section>
+<section id="chapter20"></section>
 
 > Chapter 20: Variables
 
@@ -534,3 +535,8 @@ There is over-writing variable for css. You can check in video __@07:16:30__. Th
 
 Also, __@07:19:00__ it shows about dark mode application, etc. You can check that too if you wishes so.
 
+<section id="chapter21"></section>
+
+> Chapter 21: Functions
+
+There are multiple functions that we already use in our previous example and so. You can check variety function in mozillas [link](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Functions). This part is also verbal one. That's why if interested, watch the source. There is almost nothing to watch about it.
