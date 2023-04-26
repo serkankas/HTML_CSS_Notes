@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+/* Variables */
+:root {
+    /* Emoji Colors */
+    --COLOR-TACO: rgb(24, 216, 24);
+    --COLOR-PIZZA: rgb(255, 42, 42);
+    --COLOR-BURGER: rgb(54, 10, 10);
+}
+
+/* Resets */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* General Style */
+html {
+    scroll-behavior: smooth;
+    font-size: 2rem;
+    font-family: "Nunito", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+div {
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    display: grid;
+    place-content: center;
+}
+
+div:first-child {
+    background-color: var(--COLOR-TACO);
+}
+
+div:nth-child(2) {
+    background-color: var(--COLOR-PIZZA);
+}
+
+div:last-child {
+    background-color: var(--COLOR-BURGER);
+}
+
+div:hover {
+    left: 100%;
+}

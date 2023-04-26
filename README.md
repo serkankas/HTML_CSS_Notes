@@ -40,6 +40,7 @@ Then, Let's dive into the course and the chapters.
 1. [Chapter 19: Pseudo Classes & Elements](#chapter19)
 1. [Chapter 20: Variables](#chapter20)
 1. [Chapter 21: Functions](#chapter21)
+1. [Chapter 22: Animation and Transformation]
 
 <section id="chapter1"></section>
 
@@ -540,3 +541,46 @@ Also, __@07:19:00__ it shows about dark mode application, etc. You can check tha
 > Chapter 21: Functions
 
 There are multiple functions that we already use in our previous example and so. You can check variety function in mozillas [link](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Functions). This part is also verbal one. That's why if interested, watch the source. There is almost nothing to watch about it.
+
+<section id="chapter22"></section>
+
+> Chapter 22: Animation and Transformation
+
+This section is a topic that should be applied in css carefully. Since this is so powerful application, not doing may seem like not modern at all, but over doing may seen like overkill. You have to find the sweet-spot of the animation and transformation.
+
+Let's dive into different varients.
+
+```css
+/* Transform is key property. */
+div {
+    transform: translateX(50%)
+} 
+```
+
+The __50%__ mark basis on the container itself but not page itself. All the transform function can be found in the mozillas official [link](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function).
+
+transform functions:
+1.  translate
+    1. translateX
+    1. translateY
+    1. translateZ
+    1. translate3d
+    1. translate
+1. rotate
+    1. rotateX
+    1. rotateY
+    1. rotateZ
+    1. rotate3d
+    1. rotate
+1. scale
+    1. scaleX
+    1. scaleY
+    1. scaleZ
+    1. scale3d
+    1. scale
+1. skew
+    1. skewX
+    1. skewY
+    1. skew
+
+These functions used for transitions. When we have, 
