@@ -583,4 +583,101 @@ transform functions:
     1. skewY
     1. skew
 
-These functions used for transitions. When we have, 
+These functions used for transitions. In short we can describe the functionality behind it.
+
+1. Translate: This one is used for moving the object based on its axis direction.
+1. Rotate: This one is used for for rotating object based on its axis point.
+1. Scale: This one is used for changing the size of object based on its axis direction.
+1. Skew: This one is used for laying object based on its axis direction.
+
+Here is a small picture that will explain visually.
+
+![Transformation Pictures](/Pics/7.png)
+
+This were basic transformation functions that we basically used to change the appearance of an object. Now if we apply same function with intervals like time delay,time duration, behavior of transition, etc. we will have an animation or atleast, we could say simple animation.
+
+Lets give an example. Assume that there are multiple divs. We want to apply common and uncommon animation for all div tags.
+
+```css
+div {
+    border: 1px solid black;
+    background-color: lime;
+    width: 200px;
+    height: 200px;
+}
+
+div:hover {
+    background-color: aqua;
+    transition-property: background-color, transform;
+    transition-duration: 0.5s, 1s;
+    transition-delay: 05s;
+}
+
+div:last-child:hover {
+    transform: rotate(180deg);
+}
+```
+
+Let's dive into animation ideas behind it.
+
+1. We add animation based on hover section. How we understand is the part we declare transition properties in this line
+
+```css
+div:hover {
+    background-color: aqua;
+    transition-property: background-color, transform;
+    transition-duration: 0.5s, 1s;
+    transition-delay: 05s;
+}
+```
+
+consideration2. We can clearly see that we want to apply transition for two different application/css-property. __background-color__ and __transform__. In default, there is no transform applied for all div tags, but only for last child. That doesn't affect transition so, you could take that as a consideration.<br>
+If you apply two different transition, you can apply same or different time interval for animation like shown in __transition-duration__ and __transition-delay__. Background-color changes will take half second while the transform will perform in total of a second. Before the transition will start, both animation will wait for 0.5 second delay since that's what we set as both.<br>
+
+There is a shortcut writing for transition-* function. Which is in following order
+
+```css
+div:hover{
+    /transition: all /* or specific one */ 2s  /* transition-timing-function. Which can be placed empty. */ /* duration */ 0.5s /* delay */;
+}
+```
+
+The behavioral changes can be found in this [link](https://developer.mozilla.org/en-US/docs/Web/CSS/transition-timing-function).
+
+Before we dive/jump in, we should apply a classnames for animation classes. Can be general, can be individual, doesn't that much matter. Inside the HTML page, apply class name in any tag you want. In this example, we will apply __animate__ class in to second div inside the example [__L22__](/env/L22/index.html) folder.
+
+```css
+.animate {
+    animation-name: slide;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1s;
+    animation-iteration-count: 4;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+
+    /* animation: duration timing-function delay iteration-count direction fill-mode name*/
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+
+    33% {
+        transform: translateX(5rem) rotate(180deg);
+    }
+
+    66% {
+        transform: translateX(-5rem) rotate(-180deg);
+    }
+
+    100% {
+        transform: translateX(0) rotate(0);
+        background-color: palevioletred;
+    }
+
+}
+```
+
+Animation is a bit deep topic that may not clear from notes. So if that the case, please consider to check official mozzila's [link](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations).
